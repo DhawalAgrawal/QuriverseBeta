@@ -59,8 +59,8 @@
 //Auto Typing
 
 var typed = new Typed('#typed', {
-    strings: ["Movies", "TVseries","Music","Animes","Games","Teams","Travel","Culture","Lifestyle","Passion","Fsndom","Curiosity"],
-    typeSpeed: 30,
+    strings: ["Movies", "TVseries","Music","Animes","Games","Teams","Travel","Culture","Lifestyle","Passion","Fandom","Curiosity"],
+    typeSpeed: 100,
     loop:true
   });
   
