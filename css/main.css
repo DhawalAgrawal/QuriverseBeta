@@ -1409,3 +1409,13 @@ header {
 .bg-color{
   background: rgba(242, 122, 84, 0.8);
 }
+
+.ha{
+  height: auto;
+}
+.blue-text{
+  color: #801ccc;
+}
+.white-text{
+  color: #fff;
+}
