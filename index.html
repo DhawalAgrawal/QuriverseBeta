@@ -38,11 +38,11 @@
 ">
         <nav class="pl4-l pl3 flex justify-between relative z-999">
             <a class="pv1" href="index.html">
-                <img class="dn db-ns site-logo pv2" src="img/svg/logo.svg" />
+                <img class="db-ns site-logo pv2" src="img/svg/logo.svg" />
                 <p class="logo-text">
                     Quriverse
                 </p>
-                <img style="width: 6.5rem;" class="dn-ns pv2" src="img/svg/logo.svg" />
+                <!-- <img style="width: 6.5rem;" class="dn-ns pv2" src="img/svg/logo.svg" /> -->
             </a>
             <!-- <div class="flex">
                 <div class="menu-open-cont listy-bg-dark flex items-center justify-center">
@@ -461,8 +461,8 @@
 
         </div>
         <div class="w-100 pv3 f6 ph3 ph4-ns">
-            <div class="fl w-50 pa2">
-                <div class=" bg-color tc pv4 br3 h5">
+            <div class="fl w-50-l pa2">
+                <div class=" bg-color tc pv4 br3 h5 ha">
                     <h2 class="washed-blue ph4">
                         HELP US IN THE MISSION OF CREATING A UNIVERSE FOR YOUR CURIOUSITY, PASSION, AND FANDOM.
 
@@ -475,8 +475,8 @@
                     </p>
                 </div>
             </div>
-            <div class="fl w-50 pa2">
-                <div class=" bg-color tc pv4 br3 h5">
+            <div class="fl w-50-l pa2">
+                <div class=" bg-color tc pv4 br3 h5 ha">
                     <h2 class="washed-blue ph4">
                         GET EXCLUSIVE ACCESS TO QURIVERSE
                     </h2>
@@ -488,8 +488,8 @@
             </div>
         </div>
         <div class="w-100 pv3 f6 ph3 ph4-ns">
-            <div class="fl w-50 pa2">
-                <div class=" bg-color tc pv4 br3 h5">
+            <div class="fl w-50-l pa2">
+                <div class=" bg-color tc pv4 br3 h5 ha">
                     <h2 class="washed-blue ph4">
                         YOUR CHANCE TO BE AN INFLUENCER ON A MEANINGFUL PLATFORM
 
@@ -501,8 +501,8 @@
                     </p>
                 </div>
             </div>
-            <div class="fl w-50 pa2">
-                <div class=" bg-color tc pv4 br3 h5">
+            <div class="fl w-50-l pa2">
+                <div class=" bg-color tc pv4 br3 h5 ha">
                     <h2 class="washed-blue ph4">
                         MANAGE COMMUNITIES CLOSE TO YOUR HEART
                     </h2>
@@ -713,9 +713,7 @@
         <h2 class="f1-l f2 mb0 listy-blue">Form to sign-up beta testers </h2>
 
     </div>
-    <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSfxh-tIEdiKgzLNH1NBCX0WtWGCc4SKn1dJRw01kE5xsTKG2g/viewform?embedded=true"
-        width="450" height="666" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+   
     <!-- <footer class="center ph5-l listy-bg-dark tl-ns tc">
     <article class="w-90 mw-listy center pv5 flex-l justify-between">
         <div class="w-30-ns">
@@ -823,24 +821,50 @@
         //         position=0;
         //     }
         //     }, 10);
-        var element = document.getElementsByClassName("menu-bars");
-        var element2 = document.getElementsByClassName("nav-container");
-        var element3 = document.getElementsByClassName("main-nav");
-        var open = false;
-        element[0].addEventListener("click", function () {
-            open = !open;
-            if (open) {
-                element[0].classList.add("change");
-                element2[0].classList.add("active");
-                element3[0].classList.remove("dn");
-            }
-            else {
-                element[0].classList.remove("change");
-                element2[0].classList.remove("active");
-                element3[0].classList.add("dn");
-            }
-        });
+        // var element = document.getElementsByClassName("menu-bars");
+        // var element2 = document.getElementsByClassName("nav-container");
+        // var element3 = document.getElementsByClassName("main-nav");
+        // var open = false;
+        // element[0].addEventListener("click", function () {
+        //     open = !open;
+        //     if (open) {
+        //         element[0].classList.add("change");
+        //         element2[0].classList.add("active");
+        //         element3[0].classList.remove("dn");
+        //     }
+        //     else {
+        //         element[0].classList.remove("change");
+        //         element2[0].classList.remove("active");
+        //         element3[0].classList.add("dn");
+        //     }
+        // });
+        var myNav = document.getElementsByClassName('logo-text');
 
+        window.addEventListener('scroll', function(event) { // To listen for event
+    event.preventDefault();
+    console.log(window.screenY);
+
+    if (window.scrollY >=520) { // Just an example
+        myNav[0].classList.add("blue-text");
+        myNav[0].classList.remove("white-text");  // or default color
+    } else {
+        myNav[0].classList.add("white-text");
+        myNav[0].classList.remove("blue-text");
+    }
+});
+//         var myNav = document.getElementsByClassName('logo-text');
+// window.onscroll = function () { 
+//     console.log(window.screenY);
+  
+//     if (window.screenY >= 200 ) {
+//         myNav[0].classList.add("blue-text");
+//         myNav[0].classList.remove("white-text");
+//     } 
+//     else {
+//         myNav[0].classList.add("white-text");
+//         myNav[0].classList.remove("blue-text");
+//     }
+// };
 
 
 

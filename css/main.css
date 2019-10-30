@@ -923,10 +923,10 @@ a {
   border-color: #01013a;
 }
 .listy-red {
-  color: #f5303e;
+  color: #F27A54;
 }
 .listy-bg-red {
-  background-color: #A262D3
+  background-color: #801ccc;
 }
 .listy-gradient-overlay::before {
   content: "";
@@ -1408,4 +1408,14 @@ header {
 }
 .bg-color{
   background: rgba(242, 122, 84, 0.8);
+}
+
+.ha{
+  height: auto;
+}
+.blue-text{
+  color: #801ccc;
+}
+.white-text{
+  color: #fff;
 }
