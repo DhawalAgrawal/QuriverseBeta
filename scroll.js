@@ -42,7 +42,7 @@ function walkCards(cards) {
         item.remove();
       });
       // reset the position - there's some offset here, probably the padding - this is set to -8 to compensate
-      position = -6;
+      position = -8;
       innerGrid.style.transform = "translateY(" + position + "px)";
       clonesAbout = false;
       clonedCards = [];
